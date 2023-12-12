@@ -1,0 +1,181 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center; /* Center the navigation items */
+}
+
+nav h1 {
+    display: inline-block; /* Ensure the h1 does not break to the next line */
+    margin: 0;
+}
+
+nav ul {
+    display: inline-block;
+    list-style: none;
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/* About Us Section Styles */
+.about-section {
+    background-color: #555; /* Updated background color to a darker gray */
+    color: #fff; /* Updated text color to white */
+    padding: 60px 0;
+    text-align: center;
+}
+
+.about-us {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-us h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* About Us Gallery Styles */
+.about-us h3 {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.about-us .gallery img {
+    max-width: 100%;
+    max-height: 150px; /* Adjusted the height of the images */
+    border-radius: 8px;
+    margin: 10px;
+}
+
+/* Team Section Styles */
+.team-section {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.team-section h2 {
+    margin-bottom: 20px;
+    color: #333; /* Updated text color for better contrast */
+}
+
+.team-members {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: calc(30% - 20px);
+    box-sizing: border-box;
+}
+
+.team-member img {
+    max-width: 100%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.team-member h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #555; /* Updated text color for better contrast */
+}
+
+.team-member p {
+    color: #777; /* Updated text color for better contrast */
+}
+
+/* Mission and Vision Section Styles */
+.mission-section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.mission-section h2 {
+    margin-bottom: 20px;
+    color: #333; /* Updated text color for better contrast */
+}
+
+.mission-section p {
+    margin-bottom: 30px;
+    color: #555; /* Updated text color for better contrast */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    clear: both; /* Clear the float */
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+    .about-section {
+        padding: 40px 0; /* Adjusted padding for smaller screens */
+    }
+
+    .about-us h2 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .about-us h3 {
+        font-size: 20px;
+        margin-top: 15px;
+    }
+
+    .about-us .gallery img {
+        max-height: 100px; /* Adjusted the height of the images for smaller screens */
+    }
+    
+    .team-section,
+    .mission-section {
+        padding: 40px 0; /* Adjusted padding for smaller screens */
+    }
+
+    .team-section h2,
+    .mission-section h2 {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+
+    .team-member {
+        width: calc(50% - 20px);
+    }
+}

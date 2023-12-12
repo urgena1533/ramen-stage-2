@@ -1,0 +1,243 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center; /* Center the navigation items */
+}
+
+nav h1 {
+    display: inline-block; /* Ensure the h1 does not break to the next line */
+    margin: 0;
+}
+
+nav ul {
+    display: inline-block;
+    list-style: none;
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Products Section Styles */
+.products-section {
+    background-color: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.product-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: calc(30% - 20px);
+    box-sizing: border-box;
+}
+
+.product img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Products Gallery Section Styles */
+#products-gallery {
+    padding: 40px 0;
+    text-align: center;
+}
+
+#products-gallery h2 {
+    margin-bottom: 20px;
+}
+
+/* Customer Reviews Section Styles */
+.reviews-section {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.reviews-section h2 {
+    margin-bottom: 20px;
+    color: #333; /* Updated text color for better contrast */
+}
+
+.reviews {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.review {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: calc(30% - 20px);
+    box-sizing: border-box;
+}
+
+.review img {
+    max-width: 100%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.review p {
+    color: #555; /* Updated text color for better contrast */
+}
+
+.reviewer {
+    font-style: italic;
+    color: #777; /* Updated text color for better contrast */
+}
+
+/* FAQ Section Styles */
+.faq-section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.faq-section h2 {
+    margin-bottom: 20px;
+    color: #333; /* Updated text color for better contrast */
+}
+
+.faq {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.question {
+    text-align: left;
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: calc(45% - 20px);
+    box-sizing: border-box;
+}
+
+.question h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #555; /* Updated text color for better contrast */
+}
+
+.question p {
+    color: #777; /* Updated text color for better contrast */
+}
+
+/* 3D Animation Section Styles */
+.animation-section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.animation-section h2 {
+    margin-bottom: 20px;
+    color: #333; /* Updated text color for better contrast */
+}
+
+.sketchfab-embed-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 800px; /* Adjust the max-width as needed */
+    margin: 0 auto;
+}
+
+.sketchfab-embed-wrapper iframe {
+    width: 100%;
+    height: 480px; /* Adjust the height as needed */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    clear: both; /* Clear the float */
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+    .products-section {
+        padding: 40px 0; /* Adjusted padding for smaller screens */
+    }
+
+    .product-list {
+        flex-direction: column;
+    }
+
+    .product {
+        width: 100%;
+    }
+
+    #products-gallery h2 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .gallery img {
+        max-height: 150px; /* Decreased the height of the images */
+    }
+    
+    .reviews-section,
+    .faq-section {
+        padding: 40px 0; /* Adjusted padding for smaller screens */
+    }
+
+    .reviews-section h2,
+    .faq-section h2 {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+
+    .review,
+    .question {
+        width: calc(90% - 20px);
+    }
+    
+    .animation-section {
+        padding: 40px 0; /* Adjusted padding for smaller screens */
+    }
+
+    .sketchfab-embed-wrapper iframe {
+        height: 300px; /* Decreased the height of the iframe for smaller screens */
+    }
+}
